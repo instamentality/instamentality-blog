@@ -8,7 +8,7 @@ const Header = () => (
     <div>
         <Link href="/">
             <a style={linkStyle}>
-                <img src="..\static\instagram.png"/>
+                <img src="..\static\instagram.png" height="50" width="50"/>
             </a>
         </Link>
         <Link href="/politics">

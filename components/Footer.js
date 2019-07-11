@@ -10,17 +10,17 @@ const Footer = () => (
         <div id="socialmedia">
             <Link href="/">
                 <a style={linkStyle}>
-                    <img src="..\static\twitter.png"/>
+                    <img src="..\static\twitter.png" height="50" width="50"/>
                 </a>
             </Link>
             <Link href="/">
                 <a style={linkStyle}>
-                    <img src="..\static\instagram.png"/>
+                    <img src="..\static\instagram.png" height="50" width="50"/>
                 </a>
             </Link>
             <Link href="/">
                 <a style={linkStyle}>
-                    <img src="..\static\youtube.png"/>
+                    <img src="..\static\youtube.png" height="50" width="50"/>
                 </a>
             </Link>
         </div>
