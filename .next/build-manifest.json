@@ -2,54 +2,54 @@
   "devFiles": [],
   "pages": {
     "/": [
-      "static/runtime/webpack-02abf031fc7e13766d3d.js",
-      "static/chunks/commons.dd88b57911d24d5850ef.js",
-      "static/runtime/main-cfc57099ccac92e986d6.js"
+      "static/runtime/webpack-3df6523e264ff2ac6548.js",
+      "static/chunks/commons.2dd55a7db9d355b90fa4.js",
+      "static/runtime/main-8c52d9852fc7a0f37f9a.js"
     ],
     "/_app": [
-      "static/runtime/webpack-02abf031fc7e13766d3d.js",
-      "static/chunks/commons.dd88b57911d24d5850ef.js",
-      "static/runtime/main-cfc57099ccac92e986d6.js"
+      "static/runtime/webpack-3df6523e264ff2ac6548.js",
+      "static/chunks/commons.2dd55a7db9d355b90fa4.js",
+      "static/runtime/main-8c52d9852fc7a0f37f9a.js"
     ],
     "/_error": [
-      "static/runtime/webpack-02abf031fc7e13766d3d.js",
-      "static/chunks/commons.dd88b57911d24d5850ef.js",
-      "static/runtime/main-cfc57099ccac92e986d6.js"
+      "static/runtime/webpack-3df6523e264ff2ac6548.js",
+      "static/chunks/commons.2dd55a7db9d355b90fa4.js",
+      "static/runtime/main-8c52d9852fc7a0f37f9a.js"
     ],
     "/about": [
-      "static/runtime/webpack-02abf031fc7e13766d3d.js",
-      "static/chunks/commons.dd88b57911d24d5850ef.js",
-      "static/runtime/main-cfc57099ccac92e986d6.js"
+      "static/runtime/webpack-3df6523e264ff2ac6548.js",
+      "static/chunks/commons.2dd55a7db9d355b90fa4.js",
+      "static/runtime/main-8c52d9852fc7a0f37f9a.js"
     ],
     "/archives": [
-      "static/runtime/webpack-02abf031fc7e13766d3d.js",
-      "static/chunks/commons.dd88b57911d24d5850ef.js",
-      "static/runtime/main-cfc57099ccac92e986d6.js"
+      "static/runtime/webpack-3df6523e264ff2ac6548.js",
+      "static/chunks/commons.2dd55a7db9d355b90fa4.js",
+      "static/runtime/main-8c52d9852fc7a0f37f9a.js"
     ],
     "/contact": [
-      "static/runtime/webpack-02abf031fc7e13766d3d.js",
-      "static/chunks/commons.dd88b57911d24d5850ef.js",
-      "static/runtime/main-cfc57099ccac92e986d6.js"
+      "static/runtime/webpack-3df6523e264ff2ac6548.js",
+      "static/chunks/commons.2dd55a7db9d355b90fa4.js",
+      "static/runtime/main-8c52d9852fc7a0f37f9a.js"
     ],
     "/index": [
-      "static/runtime/webpack-02abf031fc7e13766d3d.js",
-      "static/chunks/commons.dd88b57911d24d5850ef.js",
-      "static/runtime/main-cfc57099ccac92e986d6.js"
+      "static/runtime/webpack-3df6523e264ff2ac6548.js",
+      "static/chunks/commons.2dd55a7db9d355b90fa4.js",
+      "static/runtime/main-8c52d9852fc7a0f37f9a.js"
     ],
     "/magazine": [
-      "static/runtime/webpack-02abf031fc7e13766d3d.js",
-      "static/chunks/commons.dd88b57911d24d5850ef.js",
-      "static/runtime/main-cfc57099ccac92e986d6.js"
+      "static/runtime/webpack-3df6523e264ff2ac6548.js",
+      "static/chunks/commons.2dd55a7db9d355b90fa4.js",
+      "static/runtime/main-8c52d9852fc7a0f37f9a.js"
     ],
     "/politics": [
-      "static/runtime/webpack-02abf031fc7e13766d3d.js",
-      "static/chunks/commons.dd88b57911d24d5850ef.js",
-      "static/runtime/main-cfc57099ccac92e986d6.js"
+      "static/runtime/webpack-3df6523e264ff2ac6548.js",
+      "static/chunks/commons.2dd55a7db9d355b90fa4.js",
+      "static/runtime/main-8c52d9852fc7a0f37f9a.js"
     ],
     "/relationships": [
-      "static/runtime/webpack-02abf031fc7e13766d3d.js",
-      "static/chunks/commons.dd88b57911d24d5850ef.js",
-      "static/runtime/main-cfc57099ccac92e986d6.js"
+      "static/runtime/webpack-3df6523e264ff2ac6548.js",
+      "static/chunks/commons.2dd55a7db9d355b90fa4.js",
+      "static/runtime/main-8c52d9852fc7a0f37f9a.js"
     ]
   }
 }
