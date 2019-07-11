@@ -1,28 +1,55 @@
 {
-  "devFiles": [
-    "static/development/dll/dll_92fa9139568d8c3d8f78.js",
-    "static/development/dll/dll_92fa9139568d8c3d8f78.js.map"
-  ],
+  "devFiles": [],
   "pages": {
     "/": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-02abf031fc7e13766d3d.js",
+      "static/chunks/commons.dd88b57911d24d5850ef.js",
+      "static/runtime/main-cfc57099ccac92e986d6.js"
     ],
     "/_app": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-02abf031fc7e13766d3d.js",
+      "static/chunks/commons.dd88b57911d24d5850ef.js",
+      "static/runtime/main-cfc57099ccac92e986d6.js"
     ],
     "/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-02abf031fc7e13766d3d.js",
+      "static/chunks/commons.dd88b57911d24d5850ef.js",
+      "static/runtime/main-cfc57099ccac92e986d6.js"
+    ],
+    "/about": [
+      "static/runtime/webpack-02abf031fc7e13766d3d.js",
+      "static/chunks/commons.dd88b57911d24d5850ef.js",
+      "static/runtime/main-cfc57099ccac92e986d6.js"
+    ],
+    "/archives": [
+      "static/runtime/webpack-02abf031fc7e13766d3d.js",
+      "static/chunks/commons.dd88b57911d24d5850ef.js",
+      "static/runtime/main-cfc57099ccac92e986d6.js"
+    ],
+    "/contact": [
+      "static/runtime/webpack-02abf031fc7e13766d3d.js",
+      "static/chunks/commons.dd88b57911d24d5850ef.js",
+      "static/runtime/main-cfc57099ccac92e986d6.js"
     ],
     "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-02abf031fc7e13766d3d.js",
+      "static/chunks/commons.dd88b57911d24d5850ef.js",
+      "static/runtime/main-cfc57099ccac92e986d6.js"
     ],
-    "/next/dist/pages/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+    "/magazine": [
+      "static/runtime/webpack-02abf031fc7e13766d3d.js",
+      "static/chunks/commons.dd88b57911d24d5850ef.js",
+      "static/runtime/main-cfc57099ccac92e986d6.js"
+    ],
+    "/politics": [
+      "static/runtime/webpack-02abf031fc7e13766d3d.js",
+      "static/chunks/commons.dd88b57911d24d5850ef.js",
+      "static/runtime/main-cfc57099ccac92e986d6.js"
+    ],
+    "/relationships": [
+      "static/runtime/webpack-02abf031fc7e13766d3d.js",
+      "static/chunks/commons.dd88b57911d24d5850ef.js",
+      "static/runtime/main-cfc57099ccac92e986d6.js"
     ]
   }
 }
