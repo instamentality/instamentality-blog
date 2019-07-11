@@ -1,0 +1,22 @@
+{
+  "name": "instamentality.com",
+  "version": "1.0.0",
+  "description": "The official instamentality website!",
+  "main": "index.js",
+  "dependencies": {
+    "next": "^9.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "instamentality"
+  ],
+  "author": "",
+  "license": "ISC"
+}
