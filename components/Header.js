@@ -29,7 +29,7 @@ class Header extends React.Component{
 
         const navLinks = pages.map(page => 
                             (
-                            <div>
+                            <div key={ page }>
                                 <Link href={`/${page}`}>
                                     <a style={linkStyle}>{ page }</a>
                                 </Link>
