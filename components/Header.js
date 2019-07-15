@@ -1,32 +1,60 @@
 import Link from 'next/link';
+import React from "react";
 
 const linkStyle = {
-    marginRight: 15
+    marginRight: 15,
+    textDecoration: "none",
+    textTransform: "uppercase",
+    fontSize: "1.6rem",
+    color: "rgba(48, 48, 48, 0.8)",
+    cursor: "pointer",
+    fontFamily: "helvetica"
+
 };
 
-const Header = () => (
-    <div>
-        <Link href="/">
-            <a style={linkStyle}>
-                <img src="..\static\instagram.png" height="50" width="50"/>
-            </a>
-        </Link>
-        <Link href="/politics">
-            <a style={linkStyle}>Politics</a>
-        </Link>
-        <Link href="/relationships">
-            <a style={linkStyle}>Magazine</a>
-        </Link>
-        <Link href="/archives">
-            <a style={linkStyle}>Archives</a>
-        </Link>
-        <Link href="/contact">
-            <a style={linkStyle}>Contact</a>
-        </Link>
-        <Link href="/about">
-            <a style={linkStyle}>About</a>
-        </Link>
-    </div>
-);
+class Header extends React.Component{
+
+    render(){
+        const pages = ["politics","relationships","archives","contact","about"];
+        
+
+        const flexStyle = {
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+
+        }
+
+
+        const navLinks = pages.map(page => 
+                            (
+                            <div>
+                                <Link href={`/${page}`}>
+                                    <a style={linkStyle}>{ page }</a>
+                                </Link>
+                            </div>));
+
+        return (
+                <div style={flexStyle}>
+                    
+
+                   
+                    <Link href="/">
+                        <a style={linkStyle}>
+                            <img src="..\static\instagram.png" height="50" width="50"/>
+                        </a>
+                    </Link>
+
+                    { navLinks }
+             
+
+                </div>
+        );
+    }
+    
+}
+
+
 
 export default Header;
