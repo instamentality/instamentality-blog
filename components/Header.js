@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import React from "react";
+import { flexStyle } from "../assets/style.js";
+import pages from "../data/pages.js"
+
 
 const linkStyle = {
     marginRight: 15,
@@ -15,17 +18,7 @@ const linkStyle = {
 class Header extends React.Component{
 
     render(){
-        const pages = ["politics","relationships","archives","contact","about"];
         
-
-        const flexStyle = {
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "center",
-
-        }
-
 
         const navLinks = pages.map(page => 
                             (

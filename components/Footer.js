@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-
+import { flexStyle } from '../assets/style.js'
 /**
  * @todo style "2019 Instamentality" text
  */
@@ -21,13 +21,6 @@ const socialLinks = socials.map(social =>
                                     </Link>
                                 </div>
                             ));
-
-const flexStyle = {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-}
 
 const socialStyle = {
     display: "flex",
