@@ -6,20 +6,21 @@ class Index extends React.Component {
 
     static async getInitialProps({ req }) {
         const content = {
-            slogan: "From the mundane to the insane",
-            wallpapers: ["twitter", "instagram", "youtube"]
+            slogan: "From the mundane to the insane"
         };
         return content;
     }
 
     render() {
+        const wallpapers = ["eva","eva","eva"];
         return (
             <Layout>
                 <div className="bio">
-                    <div className="wallpaper-container">{this.props.wallpapers.map((wallpaper, i) =>
-                        (
-                            <img height="100" width="100" src={`../static/${wallpaper}.png`} alt="" id={`wallpaper${i}`} className="wallpaper" key={`${i} `} />
-                        ))}
+                    <div className="wallpaper-container">
+
+                    {wallpapers.map((wallpaper, i) => {
+                        return (<img src={`../static/eva.png`} alt="" id={`wallpaper${i}`} className="wallpaper" key={`${i} `} />)
+                    })}
                     </div>
                     <div className="slogan-container">{this.props.slogan}</div>
                 </div>
@@ -33,6 +34,9 @@ class Index extends React.Component {
                             display: block;
                         }
                     }
+                    .wallpaper{
+                        width: 30%;
+                    }
                     .bio {
                         display: flex;
                         flex-direction: column;
@@ -42,12 +46,27 @@ class Index extends React.Component {
                     .wallpaper-container {
                         display: flex;
                         flex-direction: row;
+                        height: 25vh;
+                        
+                        
                     }
+                    #wallpaper1{
+                        width: 50%;
+                    }
+          
          
                 `}</style>
 
             </Layout>
         );
+    }
+
+    renderWallpaper(){
+        let arr = [];
+        for(let i = 0; i < 3; i++){
+            arr.push(<img src={`../static/eva.png`} alt="" id={`wallpaper${i}`} className="wallpaper" key={`${i} `} />);
+        }
+        return arr;
     }
 
 }
