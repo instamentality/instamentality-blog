@@ -12,7 +12,6 @@ const linkStyle = {
     color: "rgba(48, 48, 48, 0.8)",
     cursor: "pointer",
     fontFamily: "helvetica"
-
 };
 
 class Header extends React.Component{

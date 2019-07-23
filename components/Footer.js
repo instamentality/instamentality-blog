@@ -13,8 +13,8 @@ const socials = ["twitter", "instagram", "youtube"]
 
 const socialLinks = socials.map(social =>
                             (
-                                <div key={ social}>
-                                    <Link href={`${social}.com`}>
+                                <div key={social}>
+                                    <Link href={`https://www.${social}.com`}>
                                         <a style={linkStyle}>
                                             <img height="50" width="50" src={`../static/${social}.png`}/>
                                         </a>
