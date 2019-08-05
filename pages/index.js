@@ -16,44 +16,76 @@ class Index extends React.Component {
         return (
             <Layout>
                 <div className="bio">
-                    <div className="wallpaper-container">
+                    <section className="wallpaper-container">
+                        <picture>
+                            <img src="../static/eva.png" />
+                        </picture>
 
-                    {wallpapers.map((wallpaper, i) => {
-                        return (<img src={`../static/eva.png`} alt="" id={`wallpaper${i}`} className="wallpaper" key={`${i} `} />)
-                    })}
-                    </div>
+                        <picture id="center">
+                            <img src="../static/eva.png" />
+                        </picture>
+
+                        <picture>
+                            <img src="../static/eva.png" />
+                        </picture>
+                    </section>
+
                     <div className="slogan-container">{this.props.slogan}</div>
+                    <div className="under"></div>
                 </div>
 
                 <style jsx>{`
-                    @media screen and (max-width: 600px) {
-                        .wallpaper {
-                            display: none;
-                        }
-                        #wallpaper1 {
-                            display: block;
-                        }
-                    }
-                    .wallpaper{
-                        width: 30%;
-                    }
+
+    
                     .bio {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
                     }
-                    .wallpaper-container {
-                        display: flex;
-                        flex-direction: row;
-                        height: 25vh;
-                        
+
+                    .wallpaper-container{
+                        display: grid;
+                        width: 100vw;
+            
+                        overflow-x: scroll;
+                        grid-template-rows: 25%;
+                        grid-template-columns: [head-zoomed] 3fr 4fr [sea-zoomed] 3fr;
+                        grid-column-gap: 1rem; 
+                        justify-items: center;
+                    }
+                    .wallpaper-container img{
+                        object-fit: cover;
+                        max-width: 30vw;
+                        justify-self: stretch;
+                    }
+                    #center{
+                        /* make column gaps look smaller by scaling the 
+                        center image */
+                        transform: scaleX(1.3);
+                    }
+
+                    @media (max-width: 90rem){
+                        .wallpaper-container picture:not(#center){
+                            display: none;
+                        }
+                        .wallpaper-container{
+                            justify-items: stretch;
+                        }
+                        #center img{
+                            max-width: none;
+                            width: 100vw;
+                            grid-column: 1 / -1;
+                            transition: grid-column 2s;
+                        }
+
+
                         
                     }
-                    #wallpaper1{
-                        width: 50%;
-                    }
-          
+
+    
+  
+
          
                 `}</style>
 
