@@ -24,6 +24,9 @@ class Magazine extends React.Component {
 				</section>
 
 				<style jsx>{`
+				section{
+					--primary:  rgba(224, 221, 221, 0.6);
+				}
 				section {
 					display: grid;
 					grid-template-columns: auto 4rem;
@@ -41,9 +44,11 @@ class Magazine extends React.Component {
 					align-items: center;
 				}
 				#title{
+					
 					flex-grow: 3;
 					text-align: center;
 					font-size: 2rem;
+					background-color: var(--primary);
 				}
 				main{
 					grid-area: main;
