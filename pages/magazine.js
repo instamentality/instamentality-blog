@@ -9,11 +9,18 @@ const style = {
 class Magazine extends React.Component {
 	render() {
 		return (
-			<Layout>
+			<>
 				<section>
-					<header>Header</header>
+					<header>
+						<div id="hamburger">a</div>
+						<div id="title">Title</div>
+						<div id="logo">b</div>
+					</header>
 					<nav>Nav</nav>
-					<main>Main</main>
+					<main>
+						<h1>Main</h1>
+						<article></article>
+					</main>
 				</section>
 
 				<style jsx>{`
@@ -22,11 +29,21 @@ class Magazine extends React.Component {
 					grid-template-columns: auto 4rem;
 					grid-template-rows: 2rem auto;
 					grid-template-areas: 
-						"header nav"
+						"header header"
 						"main nav"; 
 				}
 				header{
 					grid-area: header;
+					display: flex;
+					flex-direction: row;
+					width: 100%;
+					justify-content: space-between;
+					align-items: center;
+				}
+				#title{
+					flex-grow: 3;
+					text-align: center;
+					font-size: 2rem;
 				}
 				main{
 					grid-area: main;
@@ -38,7 +55,7 @@ class Magazine extends React.Component {
 				`}
 
 				</style>
-			</Layout>
+			</>
 
 		);
 	}
