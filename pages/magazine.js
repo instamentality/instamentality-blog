@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout.js";
-
-
+import Menu from "../components/Menu.js";
+import css from "../assets/hamburgers.css";
 const style = {
 	display: "grid",
 	gridTemplateRows: ""
@@ -12,7 +12,7 @@ class Magazine extends React.Component {
 			<>
 				<section>
 					<header>
-						<div id="hamburger">a</div>
+						<Menu id="menu"/>
 						<div id="title">Title</div>
 						<div id="logo">b</div>
 					</header>
