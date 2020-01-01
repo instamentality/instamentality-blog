@@ -1,39 +1,43 @@
-import React from "react";
-import Layout from "../components/Layout.js";
-import Menu from "../components/Menu.js";
-import css from "../assets/hamburgers.css";
-const style = {
-	display: "grid",
-	gridTemplateRows: ""
-};
-class Magazine extends React.Component {
-	render() {
-		return (
-			<>
-				<section>
-					<header>
-						<Menu id="menu"/>
-						<div id="title">Title</div>
-						<div id="logo">b</div>
-					</header>
-					<nav>Nav</nav>
-					<main>
-						<h1>Main</h1>
-						<article></article>
-					</main>
-				</section>
+import React, { useState } from "react";
+import MenuNav from "../components/MenuNav.js";
+const Magazine = () => {
+	const [showMenu, setMenu] = useState(false)
+	const onActive = active => setMenu(active);
 
-				<style jsx>{`
+	const normalAreas = `"menu header header"
+							"menu main nav"`;
+	const menuAreas = `"menu header header"
+						"menu main main"`;
+	return (
+		<>
+			<section>
+				{showMenu ? <div id="menu">Sidebar</div> : null}
+				<header>
+					<MenuNav onActive={onActive} />
+					<div id="title">Title</div>
+					<div id="logo">Logo</div>
+				</header>
+				<nav>Nav
+					with a lot of stuff
+					navvv
+				</nav>
+				<main>
+					<h1>Main</h1>
+					<article></article>
+				</main>
+			</section>
+
+			<style jsx>{`
 				section{
 					--primary:  rgba(224, 221, 221, 0.6);
 				}
 				section {
 					display: grid;
-					grid-template-columns: auto 4rem;
 					grid-template-rows: 2rem auto;
 					grid-template-areas: 
-						"header header"
-						"main nav"; 
+						"menu header header"
+						"menu main nav"; 
+					
 				}
 				header{
 					grid-area: header;
@@ -56,13 +60,30 @@ class Magazine extends React.Component {
 				nav{
 					grid-area: nav;
 				}
+				#menu{
+					grid-area: menu;
+				}
 				
 				`}
 
-				</style>
-			</>
+			</style>
+			{/* separating out the dynamically set styles */}
+			<style jsx>{`
+					section {
+						/*notifies browser ahead of time of what will change for 
+						efficiency's sake*/
+						will-change: grid-template-columns, grid-template-areas;
+						transition: all 5s;
+						grid-template-areas: ${showMenu ? menuAreas : normalAreas};
+						grid-template-columns: ${showMenu ? '2fr 3fr auto' : '0fr 3fr auto'};
+					}	
+					nav{
+						/* make the nav disappear when the menu is opened*/
+						display: ${showMenu ? 'none' : 'block'};
+					}
+				`}</style>
+		</>
 
-		);
-	}
+	);
 }
 export default Magazine;

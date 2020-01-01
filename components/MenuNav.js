@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
-
-const Menu = () => {
+import React, { useState, useEffect } from 'react'
+import "../assets/hamburgers.css"
+const MenuNav = ({onActive}) => {
     //using react hooks
     const baseClasses = "hamburger hamburger--collapse"
     const [active, setActive] = useState(false)
+    useEffect(() => onActive(active), [active])
     return (
         <button
             onClick={() => setActive(!active)}
@@ -15,4 +16,4 @@ const Menu = () => {
     );
 }
 
-export default Menu;
+export default MenuNav;
