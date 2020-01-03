@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import "../assets/hamburgers.css"
+
 const MenuNav = ({onActive}) => {
     //using react hooks
     const baseClasses = "hamburger hamburger--collapse"
+    //onActive is a side-effect that helps change the rest of the 
+    //page when the hamburger is clicked
     const [active, setActive] = useState(false)
     useEffect(() => onActive(active), [active])
     return (
@@ -15,5 +18,4 @@ const MenuNav = ({onActive}) => {
         </button>
     );
 }
-
 export default MenuNav;

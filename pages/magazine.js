@@ -34,9 +34,7 @@ const Magazine = () => {
 				section {
 					display: grid;
 					grid-template-rows: 2rem auto;
-					grid-template-areas: 
-						"menu header header"
-						"menu main nav"; 
+					grid-template-areas: ${normalAreas}; 
 					
 				}
 				header{
@@ -73,7 +71,7 @@ const Magazine = () => {
 						/*notifies browser ahead of time of what will change for 
 						efficiency's sake*/
 						will-change: grid-template-columns, grid-template-areas;
-						transition: all 5s;
+						transition: all 1s ease-in-out;
 						grid-template-areas: ${showMenu ? menuAreas : normalAreas};
 						grid-template-columns: ${showMenu ? '2fr 3fr auto' : '0fr 3fr auto'};
 					}	
