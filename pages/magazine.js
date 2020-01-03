@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import MenuNav from "../components/MenuNav.js";
+
 const Magazine = () => {
 	const [showMenu, setMenu] = useState(false)
 	const onActive = active => setMenu(active);
