@@ -1,14 +1,16 @@
-import React, { useState } from "react";
-import MenuNav from "../components/MenuNav.js";
+import React, { useState } from "react"
+import MenuNav from "../components/MenuNav"
+import Story from "../components/Story"
+import Ad from "../components/Ad"
 
-const Magazine = () => {
+export default function Magazine(){
 	const [showMenu, setMenu] = useState(false)
-	const onActive = active => setMenu(active);
+	const onActive = active => setMenu(active)
 
 	const normalAreas = `"menu header header"
-							"menu main nav"`;
+							"menu main nav"`
 	const menuAreas = `"menu header header"
-						"menu main main"`;
+						"menu main main"`
 	return (
 		<>
 			<section>
@@ -23,8 +25,16 @@ const Magazine = () => {
 					navvv
 				</nav>
 				<main>
-					<h1>Main</h1>
-					<article></article>
+					<Story headline="First Article!"
+						htmlContent={`
+						<p>This is dangerous!</p>
+
+						<script>alert("DANGER")</script>
+						
+						`}
+					/>
+					<Ad/>
+					<Story  headline="Second Article!"/>
 				</main>
 			</section>
 
@@ -85,4 +95,3 @@ const Magazine = () => {
 
 	);
 }
-export default Magazine;

@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/Layout.js";
 import ReactMarkdown from 'react-markdown';
 
-class Politics extends React.Component{
+export default class Politics extends React.Component{
     static async getInitialProps( { req }){
     	const content = await require('../data/politics.md');
     	return { content };
@@ -17,5 +17,3 @@ class Politics extends React.Component{
     	);
     }
 }
-
-export default Politics;
