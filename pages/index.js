@@ -1,18 +1,15 @@
 import Layout from "../components/Layout";
-
 import React from "react";
 
 class Index extends React.Component {
-
     static async getInitialProps({ req }) {
         const content = {
             slogan: "From the mundane to the insane"
         };
         return content;
     }
-
     render() {
-        const wallpapers = ["eva","eva","eva"];
+        const wallpapers = ["eva", "eva", "eva"];
         return (
             <Layout>
                 <div className="bio">
@@ -43,7 +40,6 @@ class Index extends React.Component {
                         align-items: center;
                         justify-content: center;
                     }
-
                     .wallpaper-container{
                         display: grid;
                         width: 100vw;
@@ -64,7 +60,6 @@ class Index extends React.Component {
                         center image */
                         transform: scaleX(1.3);
                     }
-
                     @media (max-width: 90rem){
                         .wallpaper-container picture:not(#center){
                             display: none;
@@ -77,29 +72,18 @@ class Index extends React.Component {
                             width: 100vw;
                             grid-column: 1 / -1;
                             transition: grid-column 2s;
-                        }
-
-
-                        
-                    }
-
-    
-  
-
-         
+                        } 
+                    } 
                 `}</style>
-
             </Layout>
         );
     }
-
-    renderWallpaper(){
+    renderWallpaper() {
         let arr = [];
-        for(let i = 0; i < 3; i++){
+        for (let i = 0; i < 3; i++) {
             arr.push(<img src={`../static/eva.png`} alt="" id={`wallpaper${i}`} className="wallpaper" key={`${i} `} />);
         }
         return arr;
     }
-
 }
 export default Index;
