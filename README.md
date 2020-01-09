@@ -3,6 +3,8 @@ The official Instamentality website!
 
 ### Some inspiring websites
 https://jonsuh.com/hamburgers/ 
+##### Scrolling help and inspiring young dev
+https://www.hweaver.com/intersection-observer-single-page-navigation/
 
 # TODO
 * Menu Sidebar
